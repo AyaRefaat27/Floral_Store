@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floral</title>
+    <!-- Icon Image -->
+    <link
+      rel="shortcut icon"
+      href="./photos/free-flower-icon-1537-thumb.png"
+      type="image/x-icon"
+    />
+    <!-- CSS Style File -->
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <!--Render all elements normally-->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <!--Font Awesome Library-->
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <!-- font-awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+    />
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Navigation -->
+    <header class="row container">
+      <a href="index.html" class="logo"> Floral </a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <nav class="navigation row">
+        <ul class="row">
+          <li><a href="#"> Home </a></li>
+          <li><a href="about_us.html"> About </a></li>
+          <li><a href="#service"> Services </a></li>
+          <li><a href="#flower"> Shop </a></li>
+          <li><a href="contact_us.html"> Contact Us</a></li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span id="cartSpan">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-sharp fa-solid fa-heart"></i>
+              <span id="favSpan">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Navigation -->
+
+    <!-- Start Slider -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">
+          <span class="num">1 / 3</span>
+          <div class="texts">
+            <h1><span>Flowers</span> are more than words.</h1>
+            <p>Make Special Memories From Flowers.</p>
+            <a href="#flower" class="btn">Dicover Flowers</a>
+          </div>
+        </div>
+
+        <img
+          src="./photos/sidebar/copy-space-roses-flowers.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">
+          <span class="num">2 / 3</span>
+          <div class="texts">
+            <h1><span>Plants </span> make our life more Beautiful.</h1>
+            <p>Make Special Memories From Flowers.</p>
+            <a href="#flower" class="btn">Dicover Flowers</a>
+          </div>
+        </div>
+        <img
+          src="./photos/sidebar/floral-composition-blue.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">
+          <span class="num">3 / 3</span>
+          <div class="texts">
+            <h1><span>Handmade</span> Flowers are Special.</h1>
+            <p>Make Special Memories From Flowers.</p>
+            <a href="#flower" class="btn">Dicover Flowers</a>
+          </div>
+        </div>
+        <img
+          src="./photos/sidebar/floral-compositions-pink.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <!-- Start Slider -->
+
+    <!-- Start Services -->
+    <section class="service" id="service">
+      <div class="container">
+        <h2>We Provide <span> Services </span> on :</h2>
+        <div class="cards grids column">
+          <a href="#service" class="s-card">
+            <i class="fa fa-star"></i>
+            <h3>Best Wishes</h3>
+          </a>
+
+          <a href="#service" class="s-card">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Baby Flowers</h3>
+          </a>
+
+          <a href="#service" class="s-card">
+            <i class="fa fa-hand-holding-heart"></i>
+            <h3>Handmade Flowers</h3>
+          </a>
+
+          <a href="#service" class="s-card">
+            <i class="fa-brands fa-pagelines"></i>
+            <h3>Flowers</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+
+    <!--Start Products -->
+    <section class="product arrival" id="flower">
+      <div class="container">
+        <h5>Our Flowers</h5>
+        <h2><span>New</span> Arrivals</h2>
+        <div class="row navigation" id="myBtnContainer">
+          <ul class="row">
+            <li class="product-filter" onclick="allFlowers()">
+              <a href="#flower"> All </a>
+            </li>
+
+            <li class="product-filter" onclick="freshFlowers()">
+              <a href="#flower"> Fresh Flowers </a>
+            </li>
+
+            <li class="product-filter" onclick="babyFlowers()">
+              <a href="#flower"> Baby Flowers </a>
+            </li>
+
+            <li class="product-filter" onclick="handmade()">
+              <a href="#flower"> Handmade Flowers </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--Start Cards -->
+    <section class="arrival container" id="flower">
+      <div class="cards column grid" id="flowers">
+        <div id="handmade">
+          <div class="card handmade">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-56-50.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Handmade Flower</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>A Simple Handmade Card.!</p>
+            </div>
+          </div>
+
+          <div class="card handmade">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-57-05.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Flower Box</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Nice Handmade Flower Box.!</p>
+            </div>
+          </div>
+
+          <div class="card handmade">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-56-57.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Memory Flower Box</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Flowers Saving Our Memory.!</p>
+            </div>
+          </div>
+
+          <div class="card handmade">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-57-00.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Handmade Flower</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>A Simple Handmade Card.!</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="fresh-flowers">
+          <div class="card fresh-flowers">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-56-05.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Flower Box</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Nice Handmade Flower Box.!</p>
+            </div>
+          </div>
+
+          <div class="card fresh-flowers">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-56-34.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Memory Flower Box</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Flowers Saving Our Memory.!</p>
+            </div>
+          </div>
+
+          <div class="card fresh-flowers">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-56-31.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Handmade Flower</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>A Simple Handmade Card.!</p>
+            </div>
+          </div>
+
+          <div class="card fresh-flowers">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-56-32.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Flower Box</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Nice Handmade Flower Box.!</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="baby-flowers">
+          <div class="card baby-flowers">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-57-14 (2).jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Memory Flower Box</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Flowers Saving Our Memory.!</p>
+            </div>
+          </div>
+
+          <div class="card baby-flowers">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-57-09.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Handmade Flower</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>A Simple Handmade Card.!</p>
+            </div>
+          </div>
+
+          <div class="card baby-flowers">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-57-12.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Flower Box</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Nice Handmade Flower Box.!</p>
+            </div>
+          </div>
+
+          <div class="card baby-flowers">
+            <div class="row">
+              <img
+                src="./photos/Flowers/photo_2023-01-07_18-57-04.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_content row">
+              <div class="icons">
+                <h3>Memory Flower Box</h3>
+                <p><a href="#flower" class="addToCart">Add To Cart</a></p>
+                <p>
+                  <a href="#flower" class="addToFav"
+                    ><i class="fa-sharp fa-solid fa-heart"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Flowers Saving Our Memory.!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Cards -->
+    <!-- End Products-->
+
+    <!-- Start Search -->
+    <section class="search">
+      <div class="container">
+        <h2><span>What</span> do you want?</h2>
+        <div class="row">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search Waht You Need"
+          />
+          <i class="fa-sharp fa-solid fa-search"></i>
+        </div>
+      </div>
+    </section>
+    <!-- End Search -->
+
+    <!--Start Posts -->
+    <section class="posts" id="Posts">
+      <div class="container row title">
+        <div>
+          <h5>Our Latest Posts</h5>
+          <h2><span>Floral</span> Tricks</h2>
+        </div>
+        <a href="#">View all Posts</a>
+      </div>
+    </section>
+    <section class="post container" id="Posts">
+      <div class="cards column grid">
+        <div class="card">
+          <div class="row">
+            <img src="./photos/Flowers/photo_2023-01-07_18-57-13.jpg" alt="" />
+          </div>
+          <div class="image_content row">
+            <div class="icons">
+              <p><a href="#Posts" class="addToCart">View Post</a></p>
+            </div>
+          </div>
+          <div class="description">
+            <h4>Beautiful Handmade Flower Card From Paper by Kathy Klein</h4>
+            <p>Flowers have a language that 1000 words can not say ...</p>
+            <p>MAY 22,2020</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <img src="./photos/Flowers/photo_2023-01-07_18-57-06.jpg" alt="" />
+          </div>
+          <div class="image_content row">
+            <div class="icons">
+              <p><a href="#Posts" class="addToCart">View Post</a></p>
+            </div>
+          </div>
+          <div class="description">
+            <h4>Beautiful Handmade Flower Card From Paper by Kathy Klein</h4>
+            <p>Flowers have a language that 1000 words can not say ...</p>
+            <p>MAY 22,2020</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <img src="./photos/Flowers/photo_2023-01-07_18-56-09.jpg" alt="" />
+          </div>
+          <div class="image_content row">
+            <div class="icons">
+              <p><a href="#Posts" class="addToCart">View Post</a></p>
+            </div>
+          </div>
+          <div class="description">
+            <h4>Beautiful Handmade Flower Card From Paper by Kathy Klein</h4>
+            <p>Flowers have a language that 1000 words can not say ...</p>
+            <p>MAY 22,2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Posts -->
+
+    <!-- Start Party Section -->
+    <section class="party">
+      <div class="text row container">
+        <div>
+          <h2>Let Flowers make your Party more Beautiful.</h2>
+          <a href="#flower" class="btn"> Order Now </a>
+          <a href="contact_us.html" class="btn"> Contact US </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Party Section -->
+
+    <!-- Start Quotes -->
+    <section class="quotes container">
+      <h2><span>Special</span> Quotes</h2>
+      <div class="quote row container">
+        <div class="content">
+          <q>
+            If you look the right way , you can see that all world is a Garden.!
+          </q>
+          <h5>Mojo Kaka</h5>
+          <h6>Writer</h6>
+        </div>
+      </div>
+    </section>
+    <!-- End Quotes -->
+
+    <!-- Start Contact Mail -->
+    <section class="mailing">
+      <div class="text row container">
+        <div>
+          <h2>Feel Breif to Mail us on:</h2>
+          <a
+            href="mailto:floral_store@mail.com?subject=Welcome To Floral Store."
+            class="btn"
+            id="mail-text"
+          >
+            floral_store@mail.com
+          </a>
+          <a href="contact_us.html" class="btn" id="contact-btn">
+            Contact US
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Start Contact Mail -->
+
+    <!-- Start Button -->
+    <a onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+    <!-- End Button -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer row">
+          <div>
+            <a href="#" class="logo">Floral</a>
+          </div>
+          <div>
+            <h4>Menu</h4>
+            <ul class="row">
+              <li><a href="#"> Home </a></li>
+              <li><a href="about_us.html"> About </a></li>
+              <li><a href="#service"> Services </a></li>
+              <li><a href="#flower"> Shop </a></li>
+              <li><a href="contact_us.html"> Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="media-links row">
+            <a href="https://www.youtube.com" class="row"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://www.facebook.com" class="row"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" class="row"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <p class="copy-right">
+          &copy; 8 Jan 2023 <span>Aya Refaat</span> From ITI |
+          <a href="#" class="logo">Floral</a>
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./assets/js/home.js"></script>
+  </body>
+</html>

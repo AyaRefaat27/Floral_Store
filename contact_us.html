@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floral</title>
+    <!-- Icon Image -->
+    <link
+      rel="shortcut icon"
+      href="./photos/free-flower-icon-1537-thumb.png"
+      type="image/x-icon"
+    />
+    <!-- CSS Style File -->
+    <link rel="stylesheet" href="./assets/css/contact_us.css" />
+    <!--Render all elements normally-->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <!--Font Awesome Library-->
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <!-- font-awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+    />
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Navigation -->
+    <header class="row container">
+      <a href="index.html" class="logo"> Floral </a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <nav class="navigation row">
+        <ul class="row">
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="about_us.html"> About </a></li>
+          <li><a href="#"> Services </a></li>
+          <li><a href="#"> Shop </a></li>
+          <li><a href="contact_us.html"> Contact Us</a></li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span id="cartSpan">(0)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-sharp fa-solid fa-heart"></i>
+              <span id="favSpan">(0)</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Navigation -->
+
+    <!-- Start Contact  -->
+    <div class="contact_container">
+      <div class="contact">
+        <div class="left"></div>
+        <div class="right">
+          <h2>Contact US</h2>
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="field"
+            id="username"
+          />
+          <p id="pOfName"></p>
+
+          <input
+            type="email"
+            placeholder="Your E-Mail"
+            class="field"
+            id="email"
+          />
+          <p id="pOfMail"></p>
+
+          <input
+            type="tel"
+            placeholder="Your Phone Number"
+            class="field"
+            id="phone"
+          />
+          <p id="pOfPhone"></p>
+
+          <textarea
+            placeholder="Message"
+            class="field area"
+            id="textarea"
+          ></textarea>
+          <p id="pOfText"></p>
+
+          <a href="#" class="btn" id="submit">Send</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact  -->
+
+    <!-- Start Follow -->
+    <section class="background">
+      <div class="hero row container">
+        <div class="content">
+          <h2>Follow US</h2>
+          <p>Make Special Memories From Flowers.</p>
+          <div class="media-links row">
+            <a href="https://www.youtube.com" class="row"
+              ><i class="fab fa-youtube you"></i
+            ></a>
+            <a href="https://www.facebook.com" class="row"
+              ><i class="fab fa-facebook face"></i
+            ></a>
+            <a href="https://www.twitter.com" class="row"
+              ><i class="fab fa-twitter twitt"></i
+            ></a>
+            <a href="https://www.pinterest.com" class="row"
+              ><i class="fab fa-pinterest pint"></i
+            ></a>
+            <a href="https://www.instagram.com" class="row"
+              ><i class="fab fa-instagram insta"></i
+            ></a>
+          </div>
+          <h2 style="padding-top: 30px">Visit US</h2>
+          <p><a href="#">www.floral_store.com</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- End Follow   -->
+
+    <!-- Start Location  -->
+    <div class="location">
+      <div class="contact">
+        <div class="left">
+          <a href="#" class="btn"> Got To Our Location</a>
+        </div>
+        <div class="right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.74896481342!2d31.3903003375!3d30.05948850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145817d4dbd907f3%3A0x47c15ece5ffb278c!2sRousique.com%20-%20Buy%20Flowers%20Online%20In%20Egypt!5e0!3m2!1sar!2seg!4v1673134180812!5m2!1sar!2seg"
+            width="500px"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- End Location  -->
+
+    <!-- Start Button -->
+    <a onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+    <!-- End Button -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer row">
+          <div>
+            <a href="#" class="logo">Floral</a>
+          </div>
+          <div>
+            <h4>Menu</h4>
+            <ul class="row">
+              <li><a href="#"> Home </a></li>
+              <li><a href="about_us.html"> About </a></li>
+              <li><a href="#service"> Services </a></li>
+              <li><a href="#flower"> Shop </a></li>
+              <li><a href="contact_us.html"> Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="media-links row">
+            <a href="https://www.youtube.com" class="row"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://www.facebook.com" class="row"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" class="row"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <p class="copy-right">
+          &copy; 8 Jan 2023 <span>Aya Refaat</span> From ITI |
+          <a href="#" class="logo">Floral</a>
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="./assets/js/contact_us.js"></script>
+  </body>
+</html>
